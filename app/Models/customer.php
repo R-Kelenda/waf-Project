@@ -21,5 +21,7 @@ class Customer extends Model
     { 
         $this->attributes['dob']=$db; 
     } 
+	
+	
 } 
 ?>
