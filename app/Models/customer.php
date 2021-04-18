@@ -16,5 +16,11 @@ class customer extends Model
     { 
         $this->attributes['surname']=$sn; 
     } 
+	
+	public function setDOB($db) 
+    { 
+        $this->attributes['dob']=$db; 
+    } 
+	
 } 
 ?>

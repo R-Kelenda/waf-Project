@@ -15,7 +15,7 @@ class CustomerController extends Controller
         $customer = new \App\Models\Customer(); //creates a new instance of the customer object
         $customer->setFirstname($request->firstname);//sets the attributes
         $customer->setSurname($request->surname);//sets the attributes
-		$customer->setdob($request->dob);//sets the attributes
+		$customer->setDOB($request->DOB);//sets the attributes
         $customer->save();//persists the Customer object to the database
     } 
 	
@@ -30,6 +30,8 @@ class CustomerController extends Controller
         $customer = Customer::find($request->id);
         $customer->setFirstname($request->firstname);
         $customer->setSurname($request->surname);
+		$customer->setDOB($request->DOB);
+		
         $customer->save();
     }
 } 
