@@ -12,8 +12,9 @@
     <body style= 'background-color: gray'> 
         <nav class="navbar navbar-default navbar-static-top"> 
             <ul class="nav navbar-nav"> 
-                <li><a href="https://laravel.com/docs">Laravel Documentation</a></li> 
-                <li><a href="https://laracasts.com/">Laravel Video Tutorials</a></li> 
+                <li><a href="">Laravel Documentation</a></li> 
+                <li><a href="">Laravel Video Tutorials</a></li> 
+				<li><a href=">Laravel Video Tutorials</a></li>
             </ul> 
         </nav> 
         <div id="page-content-wrapper"> 

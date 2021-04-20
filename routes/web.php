@@ -30,3 +30,10 @@ Route::post('/customers/create', 'CustomerController@create')->name('customers.c
 Route::get('/customers/edit/{id}', 'CustomerController@edit');
 Route::post('/customers/update', 'CustomerController@update');
 
+
+
+Route::resource('people', 'personController');
+
+Route::resource('orders', 'ordersController');
+
+Route::resource('trainers', 'trainerController');
