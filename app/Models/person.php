@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model as Model;
 /**
  * Class person
  * @package App\Models
- * @version April 20, 2021, 11:25 am UTC
+ * @version April 23, 2021, 4:30 pm UTC
  *
  * @property \Illuminate\Database\Eloquent\Collection $orders
  * @property integer $PERSONID

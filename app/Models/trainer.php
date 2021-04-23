@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model as Model;
 /**
  * Class trainer
  * @package App\Models
- * @version April 20, 2021, 11:28 am UTC
+ * @version April 23, 2021, 4:31 pm UTC
  *
  * @property \Illuminate\Database\Eloquent\Collection $orders
  * @property string $firstname
