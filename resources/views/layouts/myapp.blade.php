@@ -21,12 +21,14 @@
             <div class="container-fluid">
  
                 <div class="row"> 
-                    <div class="col-lg-2"><img src='{{asset('img/gymMember.jpg')}}' style='height:120px;weight:100%' class=
-					img=responsive'/></div>  
-                    <div class="col-lg-8"> @yield('content') </div> 
-                    <div class="col-lg-2"></div> 
-                </div> 
+                    <div class="col-1g-2"><img src='{{asset('img/gymMember.jpg')}}' style='height:300px;width:100%' class='img-responsive'/></div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8"> @yield('content') </div>
+                    <div class="col-lg-2"></div>
+                </div>
             </div> 
+        </div> 
+     
          </div> 
     </body> 
 </html>

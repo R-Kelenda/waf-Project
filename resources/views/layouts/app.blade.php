@@ -11,10 +11,11 @@
     </head> 
     <body style= 'background-color: gray'> 
         <nav class="navbar navbar-default navbar-static-top"> 
-            <ul class="nav navbar-nav"> 
-                <li><a href="">New Member</a></li> 
-                <li><a href="">Trainer</a></li> 
-				<li><a href="">Orders</a></li> 
+            <ul class="nav navbar-nav">
+               	<li><a href="{{ route('people.index')}}">New Gym Member</a></li>		
+                <li><a href="{{ route('orders.index')}}">orders.index</a></li> 
+                <li><a href="{{ route('orders.create')}}">new orders</a></li> 
+				
             </ul> 
         </nav> 
         <div id="page-content-wrapper"> 
