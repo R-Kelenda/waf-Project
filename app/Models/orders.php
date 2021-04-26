@@ -78,4 +78,8 @@ class orders extends Model
     {
         return $this->belongsTo(\App\Models\Trainer::class, 'TRAINERID');
     }
+	public function __toString()
+	{
+		return "hello - orders";
+	}
 }

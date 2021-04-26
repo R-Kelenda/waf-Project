@@ -77,4 +77,8 @@ class person extends Model
     {
         return $this->hasMany(\App\Models\Order::class, 'PERSONID');
     }
+	public function __toString()
+	{
+		return $this->firstname ." " . $this->surname;
+	}
 }

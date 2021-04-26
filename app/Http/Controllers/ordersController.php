@@ -9,6 +9,8 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use App\Models\person as person;
+use App\Models\trainer as trainer;
 
 class ordersController extends AppBaseController
 {
@@ -42,7 +44,12 @@ class ordersController extends AppBaseController
      */
     public function create()
     {
-        return view('orders.create');
+        //Find all members from the DB and return as an array of Member.php objects
+        $person = person::all();
+        //Find all courts from the DB and return as an array of Court.php objects
+        $trainer = trainer::all();
+        //return the bookings.create view with $members and $courts as view variables
+        return view('orders.create')->with('person',$person)->with('trainer',$trainer);
     }
 
     /**

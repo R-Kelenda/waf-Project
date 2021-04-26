@@ -19,7 +19,11 @@
 <!-- Customername Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('CustomerName', 'Customername:') !!}
-    {!! Form::text('CustomerName', null, ['class' => 'form-control','maxlength' => 30,'maxlength' => 30]) !!}
+	<select = 'personid' class="form-control">
+    @foreach($person as $person)
+	    <option value='{{$person->id}}'>{{$person}}</option>
+	@endforeach
+	</select>
 </div>
 
 <!-- Orderdate Field -->

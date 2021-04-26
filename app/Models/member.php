@@ -65,4 +65,5 @@ class member extends Model
     {
         return $this->hasMany(\App\Models\Booking::class, 'memberid');
     }
+	
 }
