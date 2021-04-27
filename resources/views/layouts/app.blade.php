@@ -17,6 +17,7 @@
                 <li><a href="{{ route('orders.create')}}">new orders</a></li> 
 				
             </ul> 
+			@include('layouts.navauth')
         </nav> 
         <div id="page-content-wrapper"> 
             <div class="container-fluid">
