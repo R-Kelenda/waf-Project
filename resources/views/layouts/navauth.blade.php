@@ -1,5 +1,5 @@
 <ul class="nav navbar-nav pull-right"> 
-    <li><a href="#register">Register</a></li> 
-    <li><a href="#Login">Login</a></li> 
-    <li><a href="#Logout">Logout</a></li> 
+    <li><a href="{{route('register')}}">Register</a></li> 
+    <li><a href="{{route('login')}}">Login</a></li> 
+    <li><a href="{{route('logout')}}">Logout</a></li> 
 </ul>
