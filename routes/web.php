@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('home', 'personController@index')->name('person.index');
+Route::get('/loggedInPerson','personController@getLoggedInPersonDetails');
 
 Route::get('/customers/new', 'CustomerController@new');
 Route::post('/customers/create', 'CustomerController@create')->name('customers.create'); 

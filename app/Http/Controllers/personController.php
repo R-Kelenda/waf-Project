@@ -9,6 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use Illuminate\Support\Facades\Auth;
 
 class personController extends AppBaseController
 {
@@ -33,6 +34,21 @@ class personController extends AppBaseController
 
         return view('people.index')
             ->with('people', $people);
+    }
+	public function getLoggedInPersonDetails()
+    {
+
+        if (!Auth::guest()){
+            $user = Auth::user();
+            echo "Userid is " . $user->id;    
+            echo "person id is " . $user->person->id;
+            echo "The person's name is " . $user->person->firstname . " ";
+            echo $user->person->surname;
+            echo "The person is a " . $user->person->membertype;
+        }
+        else {
+            echo "not logged in ";
+        }
     }
 
     /**
